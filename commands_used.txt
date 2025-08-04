@@ -1,0 +1,8 @@
+# 1. Find local IP and subnet
+ipconfig
+
+# 2. Basic TCP SYN scan on local network (replace subnet with your own)
+nmap -sS 192.168.1.0/24
+
+# 3. Save scan output to a text file
+nmap -sS 192.168.1.0/24 -oN scan_result.txt
